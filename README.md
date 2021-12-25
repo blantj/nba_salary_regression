@@ -28,7 +28,7 @@ In order to scrub the NBA salary dataset, I first dropped features not useful fo
 <a href="url"><img src="Images/Isolation_Forest.png" align="middle" height="251" width="698" ></a>
 
 
-I used isolation forest to find the greatest outlier datapoints in the dataset. Observing the results of this modeling, I noticed that most outlier players had played in 5 or fewer games (-1.7 standard deviations from the mean or greater), as their small play time sample size led to a large amount of variance in their statistics. I dropped all players that had played in 5 or fewer games from the dataset. I also replaced all datapoint values greater than 4 standard deviations from the mean with the 4 standard deviation value. This was likely to mitigate the normal reduction in model performance caused by values far from their feature means. After scrubbing there were 487 datapoints across 16 features.
+I used isolation forest to find the greatest outlier datapoints in the dataset. Observing the results of this modeling, I noticed that most outlier players had played in 5 or fewer games (-1.7 standard deviations from the mean or greater), as their small play time sample size led to a large amount of variance in their statistics. I dropped all players that had played in 5 or fewer games from the dataset. I also replaced all datapoint values greater than 4 standard deviations from the mean with the 4 standard deviation value. This was likely to mitigate the normal reduction in model performance caused by values far from their feature means. After scrubbing, the dataset included 487 datapoints across 16 features.
 
 ## Explore Data
 
